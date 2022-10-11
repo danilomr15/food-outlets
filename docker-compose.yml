@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  app:
+    image: food-outlets
+    container_name: food-outlets
+    build: .
+    ports:
+      - "8080:8080"

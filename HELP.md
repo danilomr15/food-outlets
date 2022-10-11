@@ -1,9 +1,23 @@
-# Getting Started
+# Instructions
 
-### Reference Documentation
-For further reference, please consider the following sections:
+## Image build
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/reference/html/#build-image)
+Maven buid:
+```
+mvn clean package
+```
 
+Docker image build:
+```
+sudo docker build -t food-outlets .
+```
+
+Rodar a aplicação no docker:
+```
+sudo docker run -p 8080:8080 food-outlets
+```
+
+## Endpoint
+```
+curl --location --request GET 'localhost:8080/app/v1/outlets?city=Denver&maxCost=100'
+```

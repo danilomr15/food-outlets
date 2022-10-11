@@ -91,6 +91,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>food-outlets</finalName>
 	</build>
-
 </project>

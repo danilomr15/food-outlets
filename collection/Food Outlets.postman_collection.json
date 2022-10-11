@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "ec388ad5-0918-4cab-8f66-ef1d7a2ef803",
+		"name": "Food Outlets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9219554"
+	},
+	"item": [
+		{
+			"name": "Get Outlet Names",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "e323610909bc40182e98980f376da56e",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJhY2ZkYjU1Yy0wMjEyLTRmZWQtOTBjNC00ZWM3MDM4ZDQxOWQiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWN1cmVkbGF5ZXIiLCJzdWIiOiIwMDAwMDAwMDAwMyIsImV4cCI6MTY2NTE0ODgxMCwic3lzdGVtaWMiOnRydWV9.adhc4C_qOrvIYOqS1xKsv6metJIryeAwZwSEMKyvkCVG1mHat8gPBKRAWAl6LDdBWCv3x9Z3alvnxu2Pu4gcBCKwx017mwBazKT47Z0O8WFB7nXiW4elXU22oQCWLrzFaQnQpBZo9SCUJ4G2DfxGEy3Ih9HP_BHRQNlThDqRQYEGxq280h1TIo33qbCrjwMEdX3lILTB0Oxa6hMj3NFyUDtAZq_jbhyVEAc3X5PDAqNgYJ_1VZ-DtjteyuuoC8EGHUl7wS-NbgpWPM9tMzgTuAFzrAEHHJbEp6OKQukndFaycIILFdNQYtjob68MJAhWugngexKVoDyti47lujqqvQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/app/v1/outlets?city=Denver&maxCost=100",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"v1",
+						"outlets"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Denver"
+						},
+						{
+							"key": "maxCost",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
