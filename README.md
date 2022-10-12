@@ -12,7 +12,7 @@ Docker image build:
 sudo docker build -t food-outlets .
 ```
 
-Rodar a aplicação no docker:
+Run docker container:
 ```
 sudo docker run -p 8080:8080 food-outlets
 ```
